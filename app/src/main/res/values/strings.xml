@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MusicMessenger</string>
+    <string name="send">Send</string>
+    <string name="play">Play</string>
+    <string name="add_to_stave">Add to Stave</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_a_message">Enter a message</string>
+    <string name="invalid_message">Invalid message</string>
+    <string name="message_empty">Message cannot be empty</string>
+    <string name="phone_empty">Phone number cannot be empty</string>
+</resources>

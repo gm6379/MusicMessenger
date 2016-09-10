@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/main_layout"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:id="@+id/send_button"
+        android:layout_below="@+id/message_field"
+        android:layout_alignRight="@+id/message_field"
+        android:layout_alignEnd="@+id/message_field"
+        android:layout_marginTop="59dp" />
+
+    <ImageView
+        android:src="@drawable/stave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stave"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp" />
+
+    <ImageView
+        android:src="@drawable/treble_clef"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:id="@+id/treble_clef"
+        android:layout_alignTop="@+id/stave"
+        android:layout_alignLeft="@+id/stave"
+        android:layout_alignStart="@+id/stave"
+        android:layout_alignBottom="@+id/stave" />
+
+    <georgemcdonnell.com.musicmessenger.NotesView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notes_view"
+        android:layout_alignBottom="@+id/stave"
+        android:layout_alignTop="@+id/stave"
+        android:layout_alignRight="@+id/stave"
+        android:layout_alignEnd="@+id/stave"
+        android:layout_toRightOf="@+id/treble_clef"
+        android:layout_toEndOf="@+id/treble_clef"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-20dp"/>
+
+    <EditText
+        android:hint="@string/enter_a_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_field"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/stave"
+        android:layout_alignStart="@+id/stave"
+        android:layout_alignRight="@+id/notes_view"
+        android:layout_alignEnd="@+id/notes_view" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:id="@+id/play_button"
+        android:layout_alignTop="@+id/send_button"
+        android:layout_toLeftOf="@+id/send_button"
+        android:layout_toRightOf="@+id/add_to_stave_button"
+        android:layout_toEndOf="@+id/add_to_stave_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_stave"
+        android:id="@+id/add_to_stave_button"
+        android:layout_alignBottom="@+id/play_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:hint="@string/enter_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_number_field"
+        android:layout_below="@+id/message_field"
+        android:layout_alignLeft="@+id/message_field"
+        android:layout_alignStart="@+id/message_field"
+        android:layout_alignRight="@+id/message_field"
+        android:layout_alignEnd="@+id/message_field" />
+
+</RelativeLayout>
